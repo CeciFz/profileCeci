@@ -17,7 +17,8 @@ body{
     font-family: 'Inter', sans-serif; 
     /*background:  linear-gradient(175deg,#110023,#0d1926);*/
     background:  linear-gradient(175deg,#1a324c,#0d1926);
-    color: #eaeaea
+    /*color: #eaeaea*/
+    color: #c8d1db;
 }
     
 header{
@@ -32,6 +33,7 @@ header{
 .Ceci{
     font-family: 'Dancing Script', cursive;
     font-size: 4.5rem;
+    letter-spacing: 0.3rem;
 }
 
 ul{
@@ -48,7 +50,7 @@ li{
 a {
         text-decoration: none;
         align-self:center;
-        color: #eaeaea;
+        color: #c8d1db;
         font-size: 1.8rem;
 }
 
@@ -76,10 +78,44 @@ a {
 
 .section--hero p{
     font-size: 2rem;
-    margin: 1rem 0;
-    line-height: 3.2rem;
+  /*  margin: 1rem 0;*/
+    line-height: 4rem;
+    text-align: justify;
 }
 
+.section__div--btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.section__a--btn{
+    margin: 3rem 0 1rem 0;
+    padding: 1rem 2rem;
+    border: 2px #1a324c solid;
+    border-radius: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.section__a--btn:hover {
+    background-color: #8cafd7;;
+    color:#1a324c;
+}
+
+
+    /*----------------SECTION 2 - RESPOSITORIO -------------*/
+
+.section--repository{
+    /*background:  linear-gradient(175deg,#1a324c,#0d1926);*/
+    background-color: #0d1926;
+    min-height: 50vh;
+}
+
+.wave{
+    height: 150px;
+    overflow: hidden;
+}
 
     /*----------------SECTION 4 - CONTACTO -------------*/
 
@@ -88,10 +124,17 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 3rem;
 }
 
 .section__div--contact{
     flex-basis: 40%;
+}
+
+.section__div--contact p{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: justify;
 }
 
 .section__form--contact{
@@ -99,6 +142,8 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     font-size: 1.7rem;
+    border: 2px #1a324c solid;
+    padding: 1.5rem;
 }
 
 .section__form--contact input, .section__form--contact textarea{
@@ -107,7 +152,7 @@ a {
     padding: 5px 10px;
     background-color: #0d1926;
     border-color: #1a324c;
-    color: #eaeaea;
+    color: #c8d1db;
     font-size: 1.7rem;
 }
 
@@ -118,6 +163,7 @@ a {
 .section__form--contact .btn {
     display: block;
     width: fit-content;
+    margin-bottom: 1rem;
 }
 
 .section__form--contact .btn:hover {
