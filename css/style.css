@@ -17,7 +17,6 @@ body{
     font-family: 'Inter', sans-serif; 
     /*background:  linear-gradient(175deg,#110023,#0d1926);*/
     background:  linear-gradient(175deg,#1a324c,#0d1926);
-    /*color: #eaeaea*/
     color: #c8d1db;
 }
     
@@ -69,7 +68,7 @@ li a:hover {
     /*----------------SECTION 1 - ABOUT ME -------------*/
 
 .section--hero{
-    padding: 5rem 0;
+    padding: 6rem 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -99,8 +98,7 @@ li a:hover {
 }
 
 .section__div--hero .a--btn{
-    margin: 2rem 0;
-    margin: 3rem 0 1rem 0;
+    margin: 5rem 0 1rem 0;
     padding: 1rem 2rem;
     background-color: inherit;
     border: 2px #1a324c solid;
@@ -115,23 +113,25 @@ li a:hover {
 }
 
 
-    /*----------------SECTION 2 - REPOSITORIO -------------*/
-
-.section--repository{
-    /*background:  linear-gradient(175deg,#1a324c,#0d1926);*/
-    background-color: #0d1926;
-    min-height: 50vh;
-}
+    /*----------------DIVISOR WAVE -------------*/
 .wave{
-    height: 150px;
+    height: 100px;
     overflow: hidden;
 }
 
+    /*----------------SECTION 2 - REPOSITORIO -------------*/
+
+.section--repository{
+    background-color: #0d1926;
+    min-height: 70vh;
+}
+
 .section__div--repository{
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
     text-align: center;
+}
+
+.section__div--repository h2{
+    margin-bottom: 5.5rem;
 }
 
 div .repos{
@@ -176,10 +176,17 @@ div .repo a{
 
 .repo p .colorLanguage{
     display: inline-block;
-    background-color: #178600;
     border-radius: 50%;
     width: 1rem;
     height: 1rem;
+}
+
+.cSharp{
+    background-color: #178600;
+}
+
+.cPlusPlus{
+    background-color:#f34b7d;
 }
 
 .repo p .language {
@@ -203,7 +210,7 @@ div .repo a{
 }
 
 .section__div--contact h2{
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
     text-align: center;
 }
 
