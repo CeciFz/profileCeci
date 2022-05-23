@@ -36,6 +36,14 @@ header{
     letter-spacing: 0.3rem;
 }
 
+header a{
+    width: 150px;
+}
+
+header a img{
+    width: 100%;
+}
+
 ul{
     display: flex;
     list-style-type: none;
@@ -128,19 +136,20 @@ li a:hover {
 
 div .repos{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    text-align: justify;
 }
 
 div .repo{
-    margin: 2rem 0;
-    margin: 3rem 0 1rem 0;
-    padding: 1rem 2rem;
     border: 2px #1a324c solid;
+    border-radius: 0.25rem;
     width: 30vw;
-    padding-right: 1.5rem;
-    padding-bottom: 1rem;
+}
+
+div .repo a{
+    padding: 2rem;
+    display: inline-block;
 }
 
 .repo h3{
@@ -149,11 +158,32 @@ div .repo{
     line-height: 2.25rem;
 }
 
+.repo h3 svg{
+    width: 1.8rem;
+    height: 1.8rem;
+    fill:#c8d1db;
+}
+
 .repo p{
     font-size: 1.5rem;
     line-height: 2.25rem;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
+}
+
+.repo .descriptionRep{
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+.repo p .colorLanguage{
+    display: inline-block;
+    background-color: #178600;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+
+.repo p .language {
+    margin-left: 0.3rem;
 }
 
 
