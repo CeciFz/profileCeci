@@ -24,9 +24,16 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90%;
-        max-width: 1280px;
-        margin: 1rem auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width:100%;
+        padding: 2rem 4rem;
+}
+
+header.sticky{
+    background-color: #0d1926;
+    padding: 0rem 4rem;
 }
 
 .Ceci{
@@ -34,14 +41,14 @@ header{
     font-size: 4.5rem;
     letter-spacing: 0.3rem;
 }
-
+/*
 header a{
     width: 150px;
 }
 
 header a img{
     width: 100%;
-}
+}*/
 
 ul{
     display: flex;
@@ -54,6 +61,7 @@ ul{
 li{
     margin: 1rem;
 }
+
 a {
         text-decoration: none;
         align-self:center;
@@ -65,9 +73,10 @@ li a:hover {
         color: #8cafd7;
     }
 
-    /*----------------SECTION 1 - ABOUT ME -------------*/
+ /*----------------SECTION 1 - ABOUT ME -------------*/
 
-.section--hero{
+.section--about{
+    margin-top: 8rem;
     padding: 6rem 0;
     display: flex;
     flex-direction: row;
@@ -76,7 +85,7 @@ li a:hover {
     align-items: center;
 }
 
-.section__div--hero{
+.section__div--about{
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
@@ -89,7 +98,7 @@ li a:hover {
     color: #8cafd7;
 }
 
-.section__div--hero p{
+.section__div--about p{
     font-size: 2rem;
     line-height: 4rem;
     text-align: justify;
@@ -97,12 +106,12 @@ li a:hover {
     width: 100%;
 }
 
-.section__div--hero .a--btn{
+.a--btn{
     margin: 5rem 0 1rem 0;
     padding: 1rem 2rem;
     background-color: inherit;
     border: 2px #1a324c solid;
-    border-radius: 2rem;
+    border-radius: 1rem;
     letter-spacing: 0.2rem;
     align-self: center;
 }
@@ -122,12 +131,15 @@ li a:hover {
     /*----------------SECTION 2 - REPOSITORIO -------------*/
 
 .section--repository{
+    padding-top: 4rem;
     background-color: #0d1926;
     min-height: 70vh;
 }
 
 .section__div--repository{
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .section__div--repository h2{
@@ -193,9 +205,19 @@ div .repo a{
     margin-left: 0.3rem;
 }
 
+.section__div--repository .a--btn{
+    align-self: flex-end;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    letter-spacing: 0;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
 
 
-    /*----------------SECTION 4 - CONTACTO -------------*/
+/*----------------SECTION 3 - CONTACTO -------------*/
 
 .section--contact{
     display: flex;
@@ -210,7 +232,7 @@ div .repo a{
 }
 
 .section__div--contact h2{
-    /*margin-bottom: 2rem;*/
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -254,7 +276,7 @@ div .repo a{
 }
 
 .section__form--contact .btn:hover {
-    background-color: #8cafd7;;
+    background-color: #8cafd7;
     color:#1a324c;
 }
 

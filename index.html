@@ -14,9 +14,9 @@
     <header>
         <a class = "Ceci" href="#">CF</a>
         <!-- <a href="#"><img src="./img/cf-3.png" alt=""></a> -->
-        <nav>
+        <nav id="up">
             <ul>
-                <!-- <li> <a href="#">Inicio</a></li> -->
+                <li> <a href="#">Inicio</a></li>
                 <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#repository">Repositorio</a></li>
                 <li><a href="#contact">Contacto</a></li>
@@ -24,9 +24,9 @@
         </nav>
     </header>
     <main>   
-        <section class = "section--hero">
-            <div class="section__div--hero">
-                <h2 id="about" class="section__tittle"> ¡Hola! soy Ceci  👋  </h2>
+        <section class = "section--about"  id="about">
+            <div class="section__div--about">
+                <h2 class="section__tittle"> ¡Hola! soy Ceci  👋  </h2>
                 <p>Estudiante de programación, dando mis primeros pasos como Software Developer.</p>
                 <p>También soy Licenciada en Administración y trabajé varios años en áreas de gestión y procesos, 
                     donde el contacto constante con la tecnología me ha conducido a especializarme en programación en la actualidad.</p>
@@ -40,7 +40,7 @@
         </div>
         <section class = "section--repository">
             <div class="section__div--repository">
-                <h2 class="section__tittle"> Repositorios GitHub  </h2>
+                <h2 class="section__tittle">  Repositorios GitHub  </h2>
                 <div class="repos">
                     <div class="repo">
                         <a href="https://github.com/Cecifz/Pokedex.net">
@@ -54,7 +54,7 @@
                         </a>
                     </div>
                     <div class="repo">
-                        <a href="#">
+                        <a href="https://github.com/Cecifz/tp-winform-Fernandez-Zumsteind">
                             <h3 class="repo__tittle">
                             <svg aria-hidden="true" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
@@ -76,24 +76,23 @@
                         </a> 
                     </div>
                 </div>
+                <a class= "a--btn" href="https://github.com/Cecifz" target="_blank" >Ir a GitHub </a>
             </div>
         </section>
-        <div class="wave">
+        <div id="contact" class="wave">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C283.57,-48.83 315.18,99.17 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #0d1926"></path>
             </svg>
         </div>
-        <section class="section--contact">
+        <section  class="section--contact" >
             <div class="section__div--contact">
                 <h2 id="contact" class="section__tittle">📧 Contacto </h2>
-                <p>Podes contactarme a través de este formulario:</p>
+                <p >Podes contactarme a través de este formulario:</p>
                 <form action="" method="" enctype="" class="section__form--contact" >
-                    <label for="Nombre" action="https://formspree.io/f/mjvllkkz" method="POST"> Nombre: </label>
+                    <label  for="Nombre" action="https://formspree.io/f/mjvllkkz" method="POST"> Nombre: </label>
                     <input type="text" name="Name" id="Nombre" required>
                     <label for="Email">Email: </label>
                         <input type="email" name="EMAIL" id="Email" required>
-                    <label for="Teléfono">Asunto (opcional): </label>
-                        <input type="tel" name="TEL" id="Teléfono" >
                     <label for="Mensaje">Mensaje:</label>
                         <textarea name="MSJ" id="Mensaje" cols="30" rows="4"required></textarea>
                     <input class = "btn" type="submit" value="  ENVIAR  ✉">
@@ -104,6 +103,11 @@
     <footer>
         Argentina - 2022 -&nbsp;<h1> Cecilia Fernandez </h1> 
     </footer>
-    <script src="https://kit.fontawesome.com/fbfdddbe1d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll" , function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky" , window .scrollY > 0)
+        })
+    </script>
 </body>
 </html> 
