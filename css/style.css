@@ -79,14 +79,12 @@ li a:hover {
     margin-top: 8rem;
     padding: 6rem 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .section__div--about{
-    flex-basis: 60%;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +100,6 @@ li a:hover {
     font-size: 2rem;
     line-height: 4rem;
     text-align: justify;
-    text-justify: inter-word;
     width: 100%;
 }
 
@@ -113,7 +110,6 @@ li a:hover {
     border: 2px #1a324c solid;
     border-radius: 1rem;
     letter-spacing: 0.2rem;
-    align-self: center;
 }
 
 .a--btn:hover  {
@@ -166,8 +162,8 @@ li a:hover {
         padding: 1rem;
         display: flex;
         flex-direction: column; 
-       /* justify-content: space-evenly;
-        align-items: baseline;*/
+        justify-content: space-evenly;
+        /*align-items: baseline;*/
         height: 100%;
     }
     
@@ -219,7 +215,7 @@ li a:hover {
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
         letter-spacing: 0;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 1.5rem;
     }
 
@@ -307,23 +303,27 @@ footer , footer h1 {
 /*********** MEDIA QUERY *********                 //767.98p  */
 
 @media screen and (max-width: 768px) {    
-/*
-    .section--about{
-        justify-content: center;
-    }
-    
+
     .section__div--about{
-        flex-basis: 80%;
+        width: 80vw;
     }
-    
+        
     .section__tittle{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     
-    .section__div--about p{
-        font-size: 1.6rem;
-        line-height: 3rem;
-    }*/
+    .section__div--about p  {
+        font-size: 1.8rem;
+    }
+
+    .section__div--about .a--btn {
+        font-size: 1.8rem;
+        margin-top: 4rem;
+    }
+
+    
+
+    /****/
 
     .section--repository{
         min-height: 50vh;          
@@ -340,6 +340,23 @@ footer , footer h1 {
 }
 
 @media screen and (max-width: 425px) {    
+
+
+    .section__tittle{
+        font-size: 2.5rem;
+    }
+    
+    .section__div--about p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    .section__div--about .a--btn {
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+
+
     div .repo{
         width: 100%;
     }
