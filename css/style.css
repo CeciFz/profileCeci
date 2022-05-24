@@ -136,7 +136,6 @@ li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 1.5rem;
     }
     
     .section__div--repository h2{
@@ -144,6 +143,7 @@ li a:hover {
     }
     
     div .repos{
+        margin-left: 1.5rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -222,58 +222,50 @@ li a:hover {
 /*----------------SECTION 3 - CONTACTO -------------*/
 
 .section--contact{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     margin-bottom: 3rem;
 }
 
 .section__div--contact{
-    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section__div--contact h2{
     margin-bottom: 2rem;
-    text-align: center;
 }
 
-.section__div--contact p{
+.section__div--contact span{
     font-size: 2rem;
     margin-bottom: 2rem;
-    text-align: justify;
-    text-justify: distribute;
-    letter-spacing: 0.2rem;
 }
 
 .section__form--contact{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    font-size: 1.7rem;
-    border: 2px #1a324c solid;
+    font-size: 1.6rem;
     padding: 1.5rem;
     letter-spacing: 0.1rem;
+    border: 2px #1a324c solid;  
 }
 
 .section__form--contact input, .section__form--contact textarea{
-    margin: 0.5rem 0 2rem 0;
+    margin: 0.5rem 0 1.5rem 0;
     font-family: 'Inter', sans-serif;
-    padding: 5px 10px;
-    background-color: #0d1926;
-    border-color: #1a324c;
+    padding: 0.2rem 0.5rem;
+    background-color: transparent;
+    border: #1a324c 2px inset;
     color: #c8d1db;
     font-size: 1.5rem;
 }
 
 .section__form--contact input{
-    height: 30px;
+    height: 2.8rem;
 }
 
 .section__form--contact .btn {
-    display: block;
-    width: fit-content;
-    height: fit-content;
+    align-self: flex-start;
+    border-style:  solid;
     margin-bottom: 0.5rem;
 }
 
@@ -281,7 +273,6 @@ li a:hover {
     background-color: #8cafd7;
     color:#1a324c;
 }
-
 
 
 /*******FOOTER***************/
@@ -326,7 +317,12 @@ footer , footer h1 {
     /****/
 
     .section--repository{
+        padding-top: 0;
         min-height: 50vh;          
+    }
+
+    .section__div--repository h2{
+        margin-bottom: 3rem;
     }
 
     div .repos{
@@ -335,6 +331,13 @@ footer , footer h1 {
 
     div .repo{
         width: 50%;
+    }
+
+    
+    /****/
+
+    .wave{
+        height: 70px;
     }
 
 }
@@ -360,7 +363,24 @@ footer , footer h1 {
     div .repo{
         width: 100%;
     }
+
+    /*****/
+
+    .section__div--contact span{
+        font-size: 1.6rem;
+    }
+
+    .section__form--contact{
+        font-size: 1.5rem;
+    }    
+
+    .section__form--contact input, .section__form--contact textarea{
+        font-size: inherit;
+    }
+
+
 }
+
 
 
 
