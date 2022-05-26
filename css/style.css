@@ -390,6 +390,7 @@ footer , footer h1 {
 
     #menu--burguer ,   .Ceci-column{
         display: inherit;
+        align-self: center;
     }
 
     .fa-bars{
