@@ -19,59 +19,66 @@ body{
     background:  linear-gradient(175deg,#1a324c,#0d1926);
     color: #c8d1db;
 }
-    
+
+
 header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width:100%;
-        padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /*top: 0;
+    left: 0;*/
+    width:100%;
+    padding: 2rem 4rem;
 }
 
 header.sticky{
-    background-color: #0d1926;
-    padding: 0rem 4rem;
+background-color: #0d1926;
+padding: 0rem 4rem;
+}
+
+.menu--burguer{
+    display: none;
+}
+
+.Ceci-column{
+    display: none;
 }
 
 .Ceci{
-    font-family: 'Dancing Script', cursive;
-    font-size: 4.5rem;
-    letter-spacing: 0.3rem;
+font-family: 'Dancing Script', cursive;
+font-size: 4.5rem;
+letter-spacing: 0.3rem;
 }
 /*
 header a{
-    width: 150px;
+width: 150px;
 }
 
 header a img{
-    width: 100%;
+width: 100%;
 }*/
 
-ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+nav{
+    width: 40%;
 }
 
-li{
-    margin: 1rem;
+ul{
+display: flex;
+list-style-type: none;
+justify-content: space-between;
+align-items: center;
 }
 
 a {
-        text-decoration: none;
-        align-self:center;
-        color: #c8d1db;
-        font-size: 1.8rem;
+    text-decoration: none;
+    color: #c8d1db;
+    font-size: 1.8rem;
 }
 
 li a:hover {
-        color: #8cafd7;
-    }
+    color: #8cafd7;
+}
 
  /*----------------SECTION 1 - ABOUT ME -------------*/
 
@@ -293,7 +300,18 @@ footer , footer h1 {
 
 /*********** MEDIA QUERY *********                 //767.98p  */
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 992px) {    
+
+    nav{
+        width: 50%;
+    }
+   
+}
+    @media screen and (max-width: 768px) {    
+
+        nav{
+            width: 65%;
+        }
 
     .section__div--about{
         width: 80vw;
@@ -333,12 +351,33 @@ footer , footer h1 {
         width: 50%;
     }
 
-    
+    .repo h3{
+        font-size: 1.8rem;
+    }
     /****/
 
     .wave{
         height: 70px;
     }
+
+        /*****/
+
+        .section__div--contact span{
+            font-size: 1.6rem;
+        }
+    
+        .section__form--contact{
+            font-size: 1.5rem;
+        }    
+    
+        .section__form--contact input, .section__form--contact textarea{
+            font-size: inherit;
+        }
+
+        .section__div--repository .a--btn{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
 
 }
 
@@ -364,22 +403,74 @@ footer , footer h1 {
         width: 100%;
     }
 
-    /*****/
-
-    .section__div--contact span{
-        font-size: 1.6rem;
-    }
-
-    .section__form--contact{
-        font-size: 1.5rem;
-    }    
-
-    .section__form--contact input, .section__form--contact textarea{
-        font-size: inherit;
-    }
-
 
 }
+
+@media screen and (max-width: 600px) {    
+
+    header{
+        align-items: flex-start;
+    }
+
+
+/*
+    .Ceci{
+        display: none;
+    }*/
+
+    .menu--burguer ,   .Ceci-column{
+        display: inherit;
+    }
+
+    .fa-bars{
+        font-size: 2.3rem;
+        cursor: pointer;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        position: absolute;
+        left: 0;
+        top:0;
+        z-index: 1;
+        background-color: #0d1926;
+        width: 50%;
+        padding-top: 2rem;
+    }
+
+    .menu{
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .menu--links{
+        align-self: center;
+    }
+        
+        /*
+    transform: translate(-100%);
+    transition: all 0.5s ease-in-out;
+    }*/
+
+}
+
+
+
+
+
+
+    /***** PRUEBA MENU ****/
+
+
+    /* CLASES */
 
 
 
